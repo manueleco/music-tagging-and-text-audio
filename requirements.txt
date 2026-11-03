@@ -1,0 +1,20 @@
+# Selected versions observed in saved installation logs; not a complete lock file.
+# Python 3.11. The complete environment has not been installed during curation.
+torch==2.9.1
+torchaudio==2.9.1
+omar-rq==0.2.1
+transformers==4.57.3
+sentence-transformers==5.2.0
+numpy==2.3.5
+scikit-learn==1.8.0
+matplotlib==3.10.8
+tqdm==4.67.1
+pandas
+datasets
+soundfile
+psutil
+codecarbon
+ipython
+ipykernel
+jupyterlab
+nbformat

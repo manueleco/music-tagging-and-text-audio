@@ -1,0 +1,39 @@
+{
+  "status": "historical_saved_outputs_not_reexecuted",
+  "main_run_songdescriber": {
+    "R@1": 0.0160857904702425,
+    "R@5": 0.046916890889406204,
+    "R@10": 0.08310992270708084
+  },
+  "comparison": [
+    {
+      "head": "linear",
+      "validation_R@10": 0.427239,
+      "songdescriber_R@1": 0.016086,
+      "songdescriber_R@5": 0.044236,
+      "songdescriber_R@10": 0.073727
+    },
+    {
+      "head": "mlp",
+      "validation_R@10": 0.449627,
+      "songdescriber_R@1": 0.017426,
+      "songdescriber_R@5": 0.052279,
+      "songdescriber_R@10": 0.076408
+    },
+    {
+      "head": "tx",
+      "validation_R@10": 0.304104,
+      "songdescriber_R@1": 0.012064,
+      "songdescriber_R@5": 0.032172,
+      "songdescriber_R@10": 0.050938
+    }
+  ],
+  "comparison_precision": "six decimals as printed in original pandas output",
+  "direction": "audio_to_text",
+  "positive": "exact paired row only",
+  "candidate_pool": "full evaluation split",
+  "source_cells_zero_based": {
+    "main_run": 43,
+    "comparison": 45
+  }
+}

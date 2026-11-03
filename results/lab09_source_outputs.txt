@@ -1,0 +1,85 @@
+Original cell 17 (zero-based), execution_count=106
+MTAT root: [local path removed]
+annotations: [local path removed]
+clip_info: [local path removed]
+audio_root: [local path removed]
+Total valid tracks: 25863
+Top tags sample: ['guitar', 'classical', 'slow', 'techno', 'strings', 'drums', 'electronic', 'rock', 'fast', 'piano', 'ambient', 'beat', 'violin', 'vocal', 'synth']
+Final split sizes (after limits)
+train: 8000 | val: 2000 | test: 2000
+
+(8000, 2000, 2000)
+
+Original cell 23 (zero-based), execution_count=109
+[cache] Loading train embeddings from disk...
+[cache] Loading val embeddings from disk...
+[cache] Loading test embeddings from disk...
+Embeddings shapes
+Train: torch.Size([8000, 512]) torch.Size([8000, 50])
+Val:   torch.Size([2000, 512]) torch.Size([2000, 50])
+Test:  torch.Size([2000, 512]) torch.Size([2000, 50])
+
+
+Original cell 31 (zero-based), execution_count=114
+Predict:   0%|          | 0/8 [00:00<?, ?it/s]
+TEST METRICS
+roc_auc_macro: 0.8510306225788308
+roc_auc_micro: 0.8873717660227529
+pr_auc_macro: 0.3055593709863755
+pr_auc_micro: 0.384031487639758
+Saved: [local path removed]
+
+
+Original cell 38 (zero-based), execution_count=117
+
+====================
+1. BASIC SANITY CHECKS
+====================
+[check] X_train: finite=True shape=(8000, 512) dtype=float32
+[check] Y_train: finite=True shape=(8000, 50) dtype=float32
+[check] X_val: finite=True shape=(2000, 512) dtype=float32
+[check] Y_val: finite=True shape=(2000, 50) dtype=float32
+[check] X_test: finite=True shape=(2000, 512) dtype=float32
+[check] Y_test: finite=True shape=(2000, 50) dtype=float32
+
+====================
+2. LOAD BEST MODEL AND EVAL (VAL/TEST)
+====================
+[ok] loaded best_model.pt: [local path removed]
+
+Predict:   0%|          | 0/8 [00:00<?, ?it/s]
+Predict:   0%|          | 0/8 [00:00<?, ?it/s]
+
+VAL METRICS (AUC)
+  roc_auc_micro: 0.8939897857365213
+  pr_auc_micro: 0.41985622072878637
+  roc_auc_macro: 0.8591028662781872
+  pr_auc_macro: 0.3281147489796168
+  n_tags_total: 50
+  n_tags_valid: 50
+  roc_auc_macro_valid: 0.8591028662781872
+  pr_auc_macro_valid: 0.3281147489796168
+
+TEST METRICS (AUC)
+  roc_auc_micro: 0.8937335358464414
+  pr_auc_micro: 0.40390367216509326
+  roc_auc_macro: 0.8596923129748943
+  pr_auc_macro: 0.3165803005026861
+  n_tags_total: 50
+  n_tags_valid: 50
+  roc_auc_macro_valid: 0.8596923129748943
+  pr_auc_macro_valid: 0.3165803005026861
+
+====================
+3. BASELINES (PR-AUC should beat these)
+====================
+
+VAL baseline comparison:
+  prior  pr_auc_micro: 0.11044688791284733 | roc_auc_micro: 0.6856173227746172
+  random pr_auc_micro: 0.053115293768813486 | roc_auc_micro: 0.4982434341557315
+  model  pr_auc_micro: 0.41985622072878637 | roc_auc_micro: 0.8939897857365213
+
+TEST baseline comparison:
+  prior  pr_auc_micro: 0.10765703914344596 | roc_auc_micro: 0.683760180912684
+  random pr_auc_micro: 0.05256350220777102 | roc_auc_micro: 0.494202953854414
+  model  pr_auc_micro: 0.40390367216509326 | roc_auc_micro: 0.8937335358464414

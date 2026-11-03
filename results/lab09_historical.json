@@ -1,0 +1,34 @@
+{
+  "status": "historical_saved_outputs_not_reexecuted",
+  "best_checkpoint_test": {
+    "roc_auc_micro": 0.8937335358464414,
+    "pr_auc_micro": 0.40390367216509326,
+    "roc_auc_macro": 0.8596923129748943,
+    "pr_auc_macro": 0.3165803005026861
+  },
+  "best_checkpoint_validation": {
+    "roc_auc_micro": 0.8939897857365213,
+    "pr_auc_micro": 0.41985622072878637,
+    "roc_auc_macro": 0.8591028662781872,
+    "pr_auc_macro": 0.3281147489796168
+  },
+  "last_training_state_test": {
+    "roc_auc_macro": 0.8510306225788308,
+    "roc_auc_micro": 0.8873717660227529,
+    "pr_auc_macro": 0.3055593709863755,
+    "pr_auc_micro": 0.384031487639758
+  },
+  "test_prior": {
+    "pr_auc_micro": 0.10765703914344596,
+    "roc_auc_micro": 0.683760180912684
+  },
+  "test_random": {
+    "pr_auc_micro": 0.05256350220777102,
+    "roc_auc_micro": 0.494202953854414
+  },
+  "source_cells_zero_based": {
+    "last_training_state_test": 31,
+    "best_checkpoint_and_baselines": 38
+  },
+  "metric_note": "pr_auc fields in the original code are sklearn average_precision_score values"
+}

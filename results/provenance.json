@@ -1,0 +1,21 @@
+{
+  "source_repository": "https://github.com/manueleco/ml-for-sound-and-music",
+  "source_commit": "14a1cf8b66d57727c6216e40907ef2f22dcad085",
+  "curated_on": "2026-11-03",
+  "sources": {
+    "9": {
+      "path": "lab09/Manuel-Castillo-lab09-mps-mitCache.ipynb",
+      "sha256": "fca9ac9e97a074c717a31ed463bffc7df9d12a134d8d8ce408aabe15dcfa8925"
+    },
+    "10": {
+      "path": "lab10/Manuel-Castillo-lab10.ipynb",
+      "sha256": "8c56553dda49a35c5cc1370885468f158ff879c35b212b6fd075764d4c9482ce"
+    }
+  },
+  "outputs": "Extracted from existing notebooks. No training was run during curation.",
+  "dependency_version_evidence": {
+    "path": "lab10/10_01_text_audio_models.ipynb",
+    "sha256": "bb3ced87dea4514fa95ed3d53ce329ea14bf5075c9ab151ddb850dc527cb20d0",
+    "scope": "Selected pinned versions were read from saved pip output in this reference notebook. It is not included in the curated repository and is not a complete environment lock."
+  }
+}

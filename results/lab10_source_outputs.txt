@@ -1,0 +1,24 @@
+Original cell 26 (zero-based), execution_count=11
+MusicCaps: 4816 536 text_col: caption
+SongDesc : 746 text_col: caption split: train
+
+
+Original cell 30 (zero-based), execution_count=13
+mc_train audio: shape=(4816, 512) | NaN=0 | Inf=0
+mc_train text: shape=(4816, 768) | NaN=0 | Inf=0
+mc_val audio: shape=(536, 512) | NaN=0 | Inf=0
+mc_val text: shape=(536, 768) | NaN=0 | Inf=0
+songdesc audio: shape=(746, 512) | NaN=0 | Inf=0
+songdesc text: shape=(746, 768) | NaN=0 | Inf=0
+
+
+Original cell 43 (zero-based), execution_count=19
+{'R@1': 0.0160857904702425,
+ 'R@5': 0.046916890889406204,
+ 'R@10': 0.08310992270708084}
+
+Original cell 45 (zero-based), execution_count=20
+  head_type  val_best_R@10  songdesc_R@1  songdesc_R@5  songdesc_R@10
+0    linear       0.427239      0.016086      0.044236       0.073727
+1       mlp       0.449627      0.017426      0.052279       0.076408
+2        tx       0.304104      0.012064      0.032172       0.050938

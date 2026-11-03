@@ -1,0 +1,4 @@
+head,validation_R@10,songdescriber_R@1,songdescriber_R@5,songdescriber_R@10
+linear,0.427239,0.016086,0.044236,0.073727
+mlp,0.449627,0.017426,0.052279,0.076408
+tx,0.304104,0.012064,0.032172,0.050938
